@@ -4,9 +4,9 @@ gemspec
 
 require File.expand_path 'spec/support/detect_rails_version', File.dirname(__FILE__)
 
-rails_version = detect_rails_version
-gem 'rails', rails_version
+gem 'rails', '~> 4.2.0.rc2'
 gem 'inherited_resources', git: 'https://github.com/codecraft63/inherited_resources'
+gem 'responders', '~> 2.0'
 
 # Optional dependencies
 gem 'cancan'
